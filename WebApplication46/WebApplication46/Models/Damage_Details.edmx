@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FnolModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Damage_Details">
+          <Key>
+            <PropertyRef Name="Policy_Number" />
+          </Key>
+          <Property Name="Staring" Type="bit" />
+          <Property Name="HOOD" Type="bit" />
+          <Property Name="Front Bumper" Type="bit" />
+          <Property Name="Front Passenger side fender" Type="bit" />
+          <Property Name="Passenger door" Type="bit" />
+          <Property Name="Rear assenger side quarter panel" Type="bit" />
+          <Property Name="Rear bumper" Type="bit" />
+          <Property Name="Rear/Trunk" Type="bit" />
+          <Property Name="Driver door" Type="bit" />
+          <Property Name="Undercarriage" Type="bit" />
+          <Property Name="Policy_Number" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="FnolModel2StoreContainer">
+          <EntitySet Name="Damage_Details" EntityType="Self.Damage_Details" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FnolModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Damage_Details">
+          <Key>
+            <PropertyRef Name="Policy_Number" />
+          </Key>
+          <Property Name="Staring" Type="Boolean" />
+          <Property Name="HOOD" Type="Boolean" />
+          <Property Name="Front_Bumper" Type="Boolean" />
+          <Property Name="Front_Passenger_side_fender" Type="Boolean" />
+          <Property Name="Passenger_door" Type="Boolean" />
+          <Property Name="Rear_assenger_side_quarter_panel" Type="Boolean" />
+          <Property Name="Rear_bumper" Type="Boolean" />
+          <Property Name="Rear_Trunk" Type="Boolean" />
+          <Property Name="Driver_door" Type="Boolean" />
+          <Property Name="Undercarriage" Type="Boolean" />
+          <Property Name="Policy_Number" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="FnolEntities6" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Damage_Details" EntityType="Self.Damage_Details" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FnolModel2StoreContainer" CdmEntityContainer="FnolEntities6">
+          <EntitySetMapping Name="Damage_Details">
+            <EntityTypeMapping TypeName="FnolModel2.Damage_Details">
+              <MappingFragment StoreEntitySet="Damage_Details">
+                <ScalarProperty Name="Staring" ColumnName="Staring" />
+                <ScalarProperty Name="HOOD" ColumnName="HOOD" />
+                <ScalarProperty Name="Front_Bumper" ColumnName="Front Bumper" />
+                <ScalarProperty Name="Front_Passenger_side_fender" ColumnName="Front Passenger side fender" />
+                <ScalarProperty Name="Passenger_door" ColumnName="Passenger door" />
+                <ScalarProperty Name="Rear_assenger_side_quarter_panel" ColumnName="Rear assenger side quarter panel" />
+                <ScalarProperty Name="Rear_bumper" ColumnName="Rear bumper" />
+                <ScalarProperty Name="Rear_Trunk" ColumnName="Rear/Trunk" />
+                <ScalarProperty Name="Driver_door" ColumnName="Driver door" />
+                <ScalarProperty Name="Undercarriage" ColumnName="Undercarriage" />
+                <ScalarProperty Name="Policy_Number" ColumnName="Policy_Number" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

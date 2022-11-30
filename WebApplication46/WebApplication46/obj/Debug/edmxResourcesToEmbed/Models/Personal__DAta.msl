@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FnolModel1StoreContainer" CdmEntityContainer="FnolEntities8">
+    <EntitySetMapping Name="Personal_Info">
+      <EntityTypeMapping TypeName="FnolModel1.Personal_Info">
+        <MappingFragment StoreEntitySet="Personal_Info">
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Policy_Type" ColumnName="Policy_Type" />
+          <ScalarProperty Name="Policy_Number" ColumnName="Policy_Number" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

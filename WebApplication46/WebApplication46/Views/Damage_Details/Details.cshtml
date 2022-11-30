@@ -1,0 +1,98 @@
+﻿@model WebApplication46.Models.Damage_Details
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Damage_Details</h4>
+    <hr />
+    <dl class="dl-horizontal"style="color:white">
+        <dt>
+            @Html.DisplayNameFor(model => model.Staring)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Staring)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HOOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HOOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Front_Bumper)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Front_Bumper)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Front_Passenger_side_fender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Front_Passenger_side_fender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Passenger_door)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Passenger_door)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rear_assenger_side_quarter_panel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rear_assenger_side_quarter_panel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rear_bumper)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rear_bumper)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rear_Trunk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rear_Trunk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Driver_door)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Driver_door)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Undercarriage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Undercarriage)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Policy_Number }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

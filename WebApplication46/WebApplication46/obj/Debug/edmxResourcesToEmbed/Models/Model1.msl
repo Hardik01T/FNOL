@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FnolModelStoreContainer" CdmEntityContainer="FnolEntities">
+    <EntitySetMapping Name="Involed_Party">
+      <EntityTypeMapping TypeName="FnolModel.Involed_Party">
+        <MappingFragment StoreEntitySet="Involed_Party">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Frist_Name" ColumnName="Frist_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Insurance_Provider" ColumnName="Insurance_Provider" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Policy_Number" ColumnName="Policy_Number" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

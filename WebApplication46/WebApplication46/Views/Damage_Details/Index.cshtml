@@ -1,0 +1,98 @@
+﻿@model IEnumerable<WebApplication46.Models.Damage_Details>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<style>
+    body {
+        background-color: rgb(37,37,37)!important;
+        @*border:solid;
+        border-color:green*@
+        color:white;
+    }
+</style>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<body>
+    <table class="table" style="background-color:black;overflow:scroll;color:whi">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Staring)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HOOD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Front_Bumper)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Front_Passenger_side_fender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Passenger_door)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rear_assenger_side_quarter_panel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rear_bumper)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rear_Trunk)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Driver_door)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Undercarriage)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Staring)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HOOD)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Front_Bumper)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Front_Passenger_side_fender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Passenger_door)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rear_assenger_side_quarter_panel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rear_bumper)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rear_Trunk)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Driver_door)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Undercarriage)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Policy_Number }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Policy_Number }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Policy_Number })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</body>

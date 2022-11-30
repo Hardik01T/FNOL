@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FnolModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Damage_Details">
+    <Key>
+      <PropertyRef Name="Policy_Number" />
+    </Key>
+    <Property Name="Staring" Type="bit" />
+    <Property Name="HOOD" Type="bit" />
+    <Property Name="Front Bumper" Type="bit" />
+    <Property Name="Front Passenger side fender" Type="bit" />
+    <Property Name="Passenger door" Type="bit" />
+    <Property Name="Rear assenger side quarter panel" Type="bit" />
+    <Property Name="Rear bumper" Type="bit" />
+    <Property Name="Rear/Trunk" Type="bit" />
+    <Property Name="Driver door" Type="bit" />
+    <Property Name="Undercarriage" Type="bit" />
+    <Property Name="Policy_Number" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="FnolModel2StoreContainer">
+    <EntitySet Name="Damage_Details" EntityType="Self.Damage_Details" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

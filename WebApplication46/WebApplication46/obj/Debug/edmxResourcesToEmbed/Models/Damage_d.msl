@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FnolModel2StoreContainer" CdmEntityContainer="FnolEntities4">
+    <EntitySetMapping Name="Damage_Details">
+      <EntityTypeMapping TypeName="FnolModel2.Damage_Details">
+        <MappingFragment StoreEntitySet="Damage_Details">
+          <ScalarProperty Name="HOOD" ColumnName="HOOD" />
+          <ScalarProperty Name="Front_Bumper" ColumnName="Front Bumper" />
+          <ScalarProperty Name="Front_Passenger_side_fender" ColumnName="Front Passenger side fender" />
+          <ScalarProperty Name="Passenger_door" ColumnName="Passenger door" />
+          <ScalarProperty Name="Rear_assenger_side_quarter_panel" ColumnName="Rear assenger side quarter panel" />
+          <ScalarProperty Name="Rear_bumper" ColumnName="Rear bumper" />
+          <ScalarProperty Name="Rear_Trunk" ColumnName="Rear/Trunk" />
+          <ScalarProperty Name="Driver_door" ColumnName="Driver door" />
+          <ScalarProperty Name="Undercarriage" ColumnName="Undercarriage" />
+          <ScalarProperty Name="Policy_Number" ColumnName="Policy_Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FnolModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Damage_Details">
+    <Key>
+      <PropertyRef Name="Policy_Number" />
+    </Key>
+    <Property Name="HOOD" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Front_Bumper" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Front_Passenger_side_fender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Passenger_door" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Rear_assenger_side_quarter_panel" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Rear_bumper" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Rear_Trunk" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Driver_door" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Undercarriage" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Policy_Number" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="FnolEntities4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Damage_Details" EntityType="Self.Damage_Details" />
+  </EntityContainer>
+</Schema>

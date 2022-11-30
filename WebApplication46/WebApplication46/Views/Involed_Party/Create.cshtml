@@ -1,0 +1,111 @@
+﻿@model WebApplication46.Models.Involed_Party
+
+@{
+    ViewBag.Title = "Create";
+}
+
+@*<h2>Create</h2>*@
+<style>
+    body {
+        background-color: rgb(37,37,37);
+    }
+
+    label {
+        color: yellow
+    }
+
+    input {
+        color: black
+    }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <body>
+        <div class="form-horizontal" style="text-align:center;border:solid;border-color:yellow;border-radius:20px;width:50%;margin-top:50px;padding:-200px;width:50%;margin-left:300px">
+            <h4 style="text-align: center; background-color: rgb(77,77,77);border-radius:20px; padding: 10px; margin-top: 0px">Involed Party</h4>
+            <div class="rows">
+                <div>
+                    <label>
+                        Id
+                    </label>
+                    <span style="margin-left:90px">
+                        @Html.TextBoxFor(m => m.Id)
+                    </span>
+                </div>
+                <br />
+                <div>
+                    <label>
+                        First Name
+                    </label>
+                    <span style="margin-left:27px">
+                        @Html.TextBoxFor(m => m.Frist_Name)
+                    </span>
+                </div>
+                <br />
+                <div>
+                    <label>
+                        Last Name
+                    </label>
+                    <span style="margin-left:30px">
+                        @Html.TextBoxFor(m => m.Last_Name)
+                    </span>
+                </div>
+                <br />
+                <div>
+                    <label>
+                        Year
+                    </label>
+                    <span style="margin-left:74px">
+                        @Html.TextBoxFor(m => m.Year)
+                    </span>
+                </div>
+                <br />
+                <div>
+                    <label>
+                        Model.No
+                    </label>
+                    <span style="margin-left:36px">
+                        @Html.TextBoxFor(m => m.Model)
+                    </span>
+                </div>
+                <br />
+                <div>
+                    <label>
+                        Policy No
+                    </label>
+                    <span style="margin-left:38px">
+                        @Html.TextBoxFor(m => m.Policy_Number)
+                    </span>
+                </div>
+                <br />
+                <div>
+                    <label>
+                        Phone No
+                    </label>
+                    <span style="margin-left:38px">
+                        @Html.TextBoxFor(m => m.Phone_Number)
+                    </span>
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group" style="margin-left:-100px">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-success" />
+                </div>
+            </div>
+
+        </div>
+    </body>
+}
+
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@
+<div class="btn btn-primary " style="color: red; border: red; background-color: rgb(255,240,0) !important ">
+    <p style="color:white!important">@Html.ActionLink("Back to List", "Index")</p>
+</div>

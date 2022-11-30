@@ -1,0 +1,91 @@
+﻿@model WebApplication46.Models.Personal_Info
+
+@{
+    ViewBag.Title = "Create";
+}
+
+@*<h2 style="text-align:center;margin-top:60px">Personal Details</h2>*@
+<style>
+    .label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;@*
+        font-weight: 00 !important;*@ 
+    }
+    body {
+        color:rgb(37,37,37);
+       
+        background-color:rgb(37,37,37);
+        height:100%;
+        margin-bottom:-100px
+        
+    }
+    input{
+        color: black;
+    }
+</style>
+@**@
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+<body>
+    <form style="border:double;">
+        <div class="form-horizontal" style="color:yellow;">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="" style="border:2px solid ;border-color:yellow; width:500px; margin-left:340px;margin-top:50px;border-radius:20px">
+                <h4 style="text-align:center;background-color:rgb(77,77,77);padding:10px;margin-top:0px;width:90%;margin-left:25px;border-radius:10px"> Enter personal Details</h4>
+                <div style="margin-left:117px;margin-top:20px" ;>
+                    <label>First Name</label>
+                    <span style="margin-left:20px;">
+                        @Html.TextBoxFor(m => m.First_Name)
+                    </span>
+                </div>
+                <br />
+                <div style="margin-left:117px">
+                    <lable>Last Name</lable>
+                    <span style="margin-left:30px">
+                        @Html.TextBoxFor(m => m.Last_Name)
+                    </span>
+                </div>
+                <br />
+
+                <div style="margin-left:117px">
+                    <lable>Policy Number</lable>
+                    <span style="margin-left:2px">
+                        @Html.TextBoxFor(m => m.Policy_Number)
+                    </span>
+                </div>
+                <br />
+
+                <div style="margin-left:117px">
+                    <label>policy Type </label>
+                    <span style="margin-left:16px">
+                        @Html.TextBoxFor(m => m.Policy_Type)
+                    </span>
+                </div>
+                <br />
+                <div style="margin-left:117px">
+                    <lable>Phone Number </lable>
+                    <span>
+                        @Html.TextBoxFor(m => m.Phone_Number)
+                    </span>
+                </div>
+                <br />
+                <div class="form-group" style="text-align:center">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-success" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+</body>
+ 
+}
+
+<div class="btn btn-primary " style="color: red; border: red; background-color: rgb(255,240,0) !important ">
+    <p style="color:white!important">@Html.ActionLink("Back to List", "Index")</p> 
+</div>

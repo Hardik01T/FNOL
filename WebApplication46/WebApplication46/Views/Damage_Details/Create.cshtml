@@ -1,0 +1,135 @@
+﻿@model WebApplication46.Models.Damage_Details
+
+@{
+    ViewBag.Title = "Create";
+}
+<style>
+    body{
+        background-color:rgb(37,37,37)
+    }
+    label{
+        color:yellow
+    }
+    imput{
+        color:black;
+    }
+</style>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+
+ <body>
+     <div class="form-horizontal" style="margin-left:300px;border:solid;border-color:yellow;margin-top:50px;width:50%;border-radius:20px">
+         <h4 style="text-align: center; background-color:rgb(77,77,77);color:yellow;border-radius:20px;width:80%;margin-left:70px; padding: 10px; margin-top: 0px"> Enter Damage Details</h4>
+         <div class="rows">
+             <div style="margin-left:180px">
+                 <label>
+                     Staring
+                 </label>
+                 <span style="margin-left:80px">
+                     @Html.EditorFor(model => model.Staring)
+
+                 </span>
+             </div>
+             <br />
+             <div style="margin-left:180px">
+                 <label>
+                     Hood
+                 </label>
+                 <span style="margin-left:94px">
+                     @Html.EditorFor(model => model.HOOD)
+                 </span>
+             </div>
+             <br />
+             <div style="margin-left:180px">
+                 <label>
+                     Fender
+                 </label>
+                 <span style="margin-left:84px">
+                     @Html.EditorFor(model => model.Front_Passenger_side_fender)
+                 </span>
+             </div>
+             <br />
+             <div style="margin-left:180px">
+                 <label>
+                     Door
+                 </label>
+                 <span style="margin-left:99px">
+                     @Html.EditorFor(model => model.Passenger_door)
+                 </span>
+             </div>
+             <br />
+             <div style="margin-left:180px">
+                 <label>
+                     Panels
+                 </label>
+                 <span style="margin-left:87px">
+                     @Html.EditorFor(model => model.Rear_assenger_side_quarter_panel)
+                 </span>
+             </div>
+             <br />
+             <div style="margin-left:180px">
+                 <label>
+                     Bumper
+                 </label>
+                 <span style="margin-left:77px">
+                     @Html.EditorFor(model => model.Rear_bumper)
+                 </span>
+             </div>
+             <br />
+             <div style="margin-left:180px">
+                 <label>
+                     Trunk
+                 </label>
+                 <span style="margin-left:90px">
+                     @Html.EditorFor(model => model.Rear_Trunk)
+                 </span>
+             </div>
+             <br />
+             <div style="margin-left:180px">
+                 <label>
+                     Driver Door
+                 </label>
+                 <span style="margin-left:53px">
+                     @Html.EditorFor(model => model.Driver_door)
+                 </span>
+             </div>
+             <br />
+             <div style="margin-left:180px">
+                 <label>
+                     Undercarriage
+                 </label>
+                 <span style="margin-left:34px">
+                     @Html.EditorFor(model => model.Undercarriage)
+                 </span>
+             </div>
+             <br />
+             <div style="margin-left:180px">
+                 <label>
+                     Policy Number
+                 </label>
+                 <span style="margin-left:30px">
+                     @Html.EditorFor(model => model.Policy_Number)
+                 </span>
+             </div>
+             <br />
+             <div class="form-group" style=";margin-left:390px">
+                 <div class="col-md-offset-2 col-md-10">
+                     <input type="submit" value="Create" class="btn btn-success" />
+                 </div>
+             </div>
+         </div>
+         
+     </div>
+
+ </body>
+        
+}
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@
+<div class="btn btn-primary " style="color: red; border: red; background-color: rgb(255,240,0) !important ">
+    <p style="color:white!important">@Html.ActionLink("Back to List", "Index")</p>
+</div>

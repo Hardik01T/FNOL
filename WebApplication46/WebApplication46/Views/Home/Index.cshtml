@@ -1,0 +1,124 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    .Container{
+        display:flex;
+        justify-content:center;
+    }
+    @**{
+        box-sizing:border-box;
+        padding:0;
+        margin:0
+    }*@
+    body{
+      background-color:rgb(37,37,37)
+    }
+    .card{
+        background-color:white;
+        width:1000px;
+        height:533px;
+        margin:10px;
+        border-radius:20px;
+    }
+    .card p
+    {
+        padding:10px;
+    }
+    
+    .cradImage img {
+        background-color:gray;
+
+        border-radius:20px;
+        height:200px;
+        width:267px;
+        margin-bottom:15px;
+        background-size:cover
+
+    }
+    .card:hover{
+        background-color:rgb(62,62,62);
+        color:white;
+        transform:scale(1.07);
+        transition:all 1s ease;
+    }
+    .head{
+        margin:20px;
+        width:300px;
+        height:90px;
+        border:solid;
+        border-color:yellow;
+        color:white;
+        text-align:center;
+        padding:-10px;
+        margin-top:2px;
+        margin-left:50px;
+    }
+
+</style>
+<br />
+<div class=" headCards" style="display:flex">
+    <div class="head">
+        <div class="Hcard">
+            <h2  style="margin-top:10px">Customer Count</h2>
+            <h2 style="margin-top:-10px">@ViewBag.TotalUsersCount</h2>
+        </div>
+    </div>
+    <div class="head">
+        <div class="Hcard">
+            <h2  style="margin-top:10px">Involed Parties</h2>
+            <h2 style="margin-top:-10px"> @ViewBag.TotalInvoledPartyCount</h2>
+        </div>
+    </div>
+    <div class="head">
+        <div class="Hcard">
+            <h2 style="margin-top:10px">Filed FNOL</h2>
+            <h2 style="margin-top:-10px"> @ViewBag.TotalDamageCount</h2>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h2 style=" color:white;text-align:center"> FNOL  reviews by Celeberity</h2>
+</div>
+<body>
+    <div class="Container">
+        <div class="card">
+            <div class="cradImage">
+                <img src="~/Content/Images/1.jpg" />
+            </div>
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="card">
+            <div class="cradImage">
+                <img src="~/Content/Images/PNGPIX-COM-salman-khan-PNG-Transparent-Image-2.png">
+            </div>
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="card">
+            <div class="cradImage">
+                <img src="~/Content/Images/Elon-Musk-PNG-Free-Download.png" />
+            </div>
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="card">
+            <div class="cradImage">
+                <img src="~/Content/Images/PNGPIX-COM-Kajol-PNG-Transparent-Image.png" />
+            </div>
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+

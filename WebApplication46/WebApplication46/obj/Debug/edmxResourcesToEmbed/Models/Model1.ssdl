@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FnolModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Involed_Party">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Frist_Name" Type="varbinary(max)" />
+    <Property Name="Last_Name" Type="varchar(max)" />
+    <Property Name="Insurance_Provider" Type="varchar(max)" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Model" Type="nchar" MaxLength="10" />
+    <Property Name="Policy_Number" Type="int" />
+    <Property Name="Phone_Number" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="FnolModelStoreContainer">
+    <EntitySet Name="Involed_Party" EntityType="Self.Involed_Party" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

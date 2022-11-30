@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FnolModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Damage_Details">
+    <Key>
+      <PropertyRef Name="Policy_Number" />
+    </Key>
+    <Property Name="HOOD" Type="String" />
+    <Property Name="Front_Bumper" Type="String" />
+    <Property Name="Front_Passenger_side_fender" Type="String" />
+    <Property Name="Passenger_door" Type="String" />
+    <Property Name="Rear_assenger_side_quarter_panel" Type="String" />
+    <Property Name="Rear_bumper" Type="String" />
+    <Property Name="Rear_Trunk" Type="String" />
+    <Property Name="Driver_door" Type="String" />
+    <Property Name="Undercarriage" Type="String" />
+    <Property Name="Policy_Number" Type="String" Nullable="false" />
+    <Property Name="Staring" Type="String" />
+  </EntityType>
+  <EntityContainer Name="FnolEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Damage_Details" EntityType="Self.Damage_Details" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FnolModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Involed_Party">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Frist_Name" Type="String" MaxLength="Max" FixedLength="false" />
+    <Property Name="Last_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Insurance_Provider" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Year" Type="String" />
+    <Property Name="Model" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Policy_Number" Type="String" />
+    <Property Name="Phone_Number" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="FnolEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Involed_Party" EntityType="Self.Involed_Party" />
+  </EntityContainer>
+</Schema>

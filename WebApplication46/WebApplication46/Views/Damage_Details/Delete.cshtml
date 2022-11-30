@@ -1,0 +1,104 @@
+﻿@model WebApplication46.Models.Damage_Details
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Damage_Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Staring)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Staring)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HOOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HOOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Front_Bumper)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Front_Bumper)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Front_Passenger_side_fender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Front_Passenger_side_fender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Passenger_door)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Passenger_door)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rear_assenger_side_quarter_panel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rear_assenger_side_quarter_panel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rear_bumper)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rear_bumper)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rear_Trunk)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rear_Trunk)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Driver_door)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Driver_door)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Undercarriage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Undercarriage)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

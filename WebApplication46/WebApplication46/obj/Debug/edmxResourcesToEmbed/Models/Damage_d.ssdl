@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FnolModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Damage_Details">
+    <Key>
+      <PropertyRef Name="Policy_Number" />
+    </Key>
+    <Property Name="HOOD" Type="nchar" MaxLength="10" />
+    <Property Name="Front Bumper" Type="nchar" MaxLength="10" />
+    <Property Name="Front Passenger side fender" Type="nchar" MaxLength="10" />
+    <Property Name="Passenger door" Type="nchar" MaxLength="10" />
+    <Property Name="Rear assenger side quarter panel" Type="nchar" MaxLength="10" />
+    <Property Name="Rear bumper" Type="nchar" MaxLength="10" />
+    <Property Name="Rear/Trunk" Type="nchar" MaxLength="10" />
+    <Property Name="Driver door" Type="nchar" MaxLength="10" />
+    <Property Name="Undercarriage" Type="nchar" MaxLength="10" />
+    <Property Name="Policy_Number" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="FnolModel2StoreContainer">
+    <EntitySet Name="Damage_Details" EntityType="Self.Damage_Details" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

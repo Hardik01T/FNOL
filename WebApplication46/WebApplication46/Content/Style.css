@@ -1,0 +1,30 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14;
+    background: #e7f3ec;
+}
+
+.Container {
+    background: white;
+    width: 500px;
+    padding: 25px;
+    margin: 100px auto 0;
+    border-top: 10px blue;
+}
+
+    .Container h2 {
+        font-size: 50;
+        text-align: center;
+    }
+
+.Name_Container {
+    width: 90%;
+    position: relative;
+    margin: 40px auto;
+}
+
